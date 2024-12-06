@@ -1,0 +1,25 @@
+.country-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .country-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .country-flag {
+    width: 100px; /* Set desired width */
+    height: 100px; /* Set desired height */
+    object-fit: cover; /* Ensures the image fits without distortion */
+  }
+  
+  
+  .country-name {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
