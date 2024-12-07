@@ -1,10 +1,14 @@
-import React from 'react';
-import CountriesPage from './pages/CountriesPage';
+
+import Countries from "./pages/Countries";
+import CountryCard from "./components/CountryCard";
+import "./styles.css";
+
 
 function App() {
   return (
     <div className="App">
-      <CountriesPage />
+      <Countries/> 
+      {/* <CountryCard/> */}
     </div>
   );
 }

@@ -1,18 +1,32 @@
-import React from 'react';
-import './CountryCard.css';
-
-const CountryCard = ({ name, flag }) => {
+const CountryCard = ({ flagURL, name }) => {
   return (
-    <div className="country-card">
-      {flag ? (
-        <img src={flag} alt={`${name} flag`} className="country-flag" />
-      ) : (
-        null // Do not render the img tag if the flag is invalid
-      )}
-      <h2 className="country-name">{name || 'Unknown'}</h2>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        border: "1px solid black",
+        borderRadius: "8px",
+        padding: "10px",
+        height: "250px",
+        width: "250px",
+      }}
+    >
+      <img
+        src={flagURL}
+        alt={`Flag of ${name}`} 
+        style={{
+          width: "100px",
+          height: "100px",
+        }}
+      />
+      <h2>{name}</h2>
     </div>
   );
 };
 
 export default CountryCard;
+
 
